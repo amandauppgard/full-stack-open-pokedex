@@ -33,15 +33,20 @@ jobs:
         uses: rjstone/discord-webhook-notify@v2.2.1
         with:
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+          username: Frog Frogson
+          avatarUrl: https://i.pinimg.com/236x/4c/28/3d/4c283d1d283f41b7ef5f538864e3ee89.jpg
           severity: info
           text: New version of pokedex deployed
           title: Everything is in order!
+          description:
 
       - name: Job failed
         if: ${{ failure() }}
         uses: rjstone/discord-webhook-notify@v2.2.1
         with:
           webhookUrl: ${{ secrets.DISCORD_WEBHOOK }}
+          username: Frog Frogson
+          avatarUrl: https://i.pinimg.com/236x/4c/28/3d/4c283d1d283f41b7ef5f538864e3ee89.jpg
           severity: error
           text: Uhoh not good
           title: Build failed
