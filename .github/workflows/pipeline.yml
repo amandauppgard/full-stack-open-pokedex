@@ -38,7 +38,7 @@ jobs:
           severity: info
           text: New version of pokedex deployed
           title: Everything is in order!
-          description:
+          description: :)
 
       - name: Job failed
         if: ${{ failure() }}
