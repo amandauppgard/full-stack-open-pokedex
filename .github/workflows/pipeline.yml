@@ -50,7 +50,7 @@ jobs:
           severity: error
           text: Uhoh not good
           title: Build failed
-          description: Commit ${{ github.workflow_sha }} by ${{ github.triggering_actor }} broke the build
+          description: Commit ${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }} by ${{ github.triggering_actor }} broke the build
 
   tag_release:
     needs: [simple_deployment_pipeline]
