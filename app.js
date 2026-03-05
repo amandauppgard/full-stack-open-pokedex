@@ -11,7 +11,6 @@ app.get('/version', (req, res) => {
 })
 
 
-// health check endpoint
 app.get('/health', (req, res) => {
   res.send('ok')
 })
