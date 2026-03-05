@@ -50,6 +50,7 @@ jobs:
           severity: error
           text: Uhoh not good
           title: Build failed
+          description: ${{ github.ref }} broke the code
 
   tag_release:
     needs: [simple_deployment_pipeline]
